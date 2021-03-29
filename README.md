@@ -64,7 +64,7 @@ Antes de inicializamos o container MySQL, vamos criar os volumes "datasets" e "d
 
 Os dados gravados no container Docker são voláteis, ou seja, quando um container é encerrado os dados ou configurações adicionais serão perdidos. Então, criar um volume e mapeá-lo em um diretório na máquina local permite mantê-los persistentes. 
 
-Você não precisa a criar esses volumes porque depende muito das suas aplicações. No meu caso, para o ambiente de desenvolvimento que estou contruindo será necessário.
+Esta é uma sugestão, você não precisa a criar esses volumes. No meu caso, para o ambiente de desenvolvimento que estou contruindo será necessário.
 
 
 

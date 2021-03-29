@@ -64,7 +64,7 @@ Antes de inicializamos o container MySQL, vamos criar os volumes "datasets" e "d
 
 Os dados gravados no container Docker são voláteis, ou seja, quando um container é encerrado os dados ou configurações adicionais serão perdidos. Então, criar um volume e mapeá-lo em um diretório na máquina local permite mantê-los persistentes. 
 
-Você não precisa a criar esses volumes porque depende muito das suas aplicações. No meu caso, para o ambiente de desenvolvimento que estou contruindo será necessário.
+Esta é uma sugestão, você não precisa a criar esses volumes. No meu caso, para o ambiente de desenvolvimento que estou contruindo será necessário.
 
 
 
@@ -290,33 +290,30 @@ $ mysql -u santana -p -h 172.17.0.3 -u root
 
 ![](img/mysql-h.png)
 
-```python
 
-```
+### Concluído!
 
-```python
+Agora temos um servidor MySQL rodando em um Docker em nossa máquina local de desenvolvimento ou testes, com volume de dados persistente e com acesso a uma pasta local compartilhada. E, o acesso ao Banco de Dados poderá ocorrer via instrução ```docker exec -it ``` ou via qualquer cliente MySQL remoto.
 
-```
 
-```python
 
-```
+**Instruções adicionais:**
 
-```python
+<!-- #region -->
+```bash 
+$ docker ps (Lista todos os containes que estão sendo executados)
+$ docker stop MySQL (Para o serviço)
+$ docker start MySQL (Inicia o serviço)
+$ docker restart MySQL (Reinicia o serviço)
 
-```
+``` 
+<!-- #endregion -->
 
-```python
+Espero ter contribuido com o seu desenvolvimento de alguma forma.
 
-```
 
-```python
+[Carlos Eugênio](https://carlosemsantana.github.io/)
 
-```
-
-```python
-
-```
 
 ### Referências
 
