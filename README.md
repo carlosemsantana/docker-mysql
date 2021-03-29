@@ -188,17 +188,14 @@ $ docker exec -it MySQL mysql -u root -p
 
 Informe a senha aleatória que foi criada na inicialização do servidor. Lembrando, para recuperar a senha utilize o comando ``` docker logs ```
 
-<!-- #region -->
-```python
-$ docker logs MySQL 2>&1 | grep GENERATED
-[Entrypoint] GENERATED ROOT PASSWORD: @D@GUDybcap13H-URDoHraLgaDJ 
-    ```
-<!-- #endregion -->
+
+![](img/docker-log-senha-mysql.png)
+
 
 ![](img/docker-exec-it-root.png)
 
 
-Após digitar a senha @D@GUDybcap13H-URDoHraLgaDJ no console, temos o acesso ao SHELL do MySQL.
+Após digitar a senha localizada nono console, temos o acesso ao SHELL do MySQL.
 
 
 ![](img/mysql.png)
