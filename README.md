@@ -281,7 +281,7 @@ Query OK, 0 rows affected (0.27 sec)
 
 <!-- #region -->
 ```bash 
-$ mysql -u santana -p -h 172.17.0.3 -u root
+$ mysql -u santana -p -h 172.17.0.3 
 ``` 
 <!-- #endregion -->
 
