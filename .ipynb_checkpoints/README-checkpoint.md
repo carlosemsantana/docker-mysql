@@ -290,30 +290,33 @@ $ mysql -u santana -p -h 172.17.0.3 -u root
 
 ![](img/mysql-h.png)
 
+```python
 
-### Concluído!
+```
 
-Agora temos um servidor MySQL rodando em um Docker em nossa máquina local de desenvolvimento ou testes, com volume de dados persistente e com acesso a uma pasta local compartilhada. E, o acesso ao Banco de Dados poderá ocorrer via instrução ```docker exec -it ``` ou via qualquer cliente MySQL remoto.
+```python
 
+```
 
+```python
 
-**Instruções adicionais:**
+```
 
-<!-- #region -->
-```bash 
-$ docker ps (Lista todos os containes que estão sendo executados)
-$ docker stop MySQL (Para o serviço)
-$ docker start MySQL (Inicia o serviço)
-$ docker restart MySQL (Reinicia o serviço)
+```python
 
-``` 
-<!-- #endregion -->
+```
 
-Espero ter contribuido com o seu desenvolvimento de alguma forma.
+```python
 
+```
 
-[Carlos Eugênio](https://carlosemsantana.github.io/)
+```python
 
+```
+
+```python
+
+```
 
 ### Referências
 
