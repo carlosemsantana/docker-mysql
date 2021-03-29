@@ -188,17 +188,14 @@ $ docker exec -it MySQL mysql -u root -p
 
 Informe a senha aleatória que foi criada na inicialização do servidor. Lembrando, para recuperar a senha utilize o comando ``` docker logs ```
 
-<!-- #region -->
-```python
-$ docker logs MySQL 2>&1 | grep GENERATED
-[Entrypoint] GENERATED ROOT PASSWORD: @D@GUDybcap13H-URDoHraLgaDJ 
-    ```
-<!-- #endregion -->
+
+![](img/docker-log-senha-mysql.png)
+
 
 ![](img/docker-exec-it-root.png)
 
 
-Após digitar a senha @D@GUDybcap13H-URDoHraLgaDJ no console, temos o acesso ao SHELL do MySQL.
+Após digitar a senha foi localizada nos logs neste console, teremos o acesso ao SHELL do MySQL.
 
 
 ![](img/mysql.png)
@@ -251,7 +248,7 @@ $ mysql -u root -p -h 172.17.0.3 -u root
 ![](img/erro1.png)
 
 
-**Foi reportando um Erro!**. Acontece que o usuário root não tem permissão para acesso remoto, então para resolver esse problema vamos criar um usuário para acesso remoto.
+**Foi reportado um Erro!**. Acontece que o usuário root não tem permissão para acesso remoto, então para resolver esse problema vamos criar um usuário para acesso remoto.
 
 
 ### A sequência de instruções para essa operação são:
