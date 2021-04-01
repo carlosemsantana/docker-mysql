@@ -1,4 +1,4 @@
-# <center>Implementação do MySQL Communit Server no Linux com Docker</center>
+# Implementação do MySQL Communit Server no Linux com Docker
 
 
 ### Resumo
